@@ -1,0 +1,17 @@
+{
+    "name": "vg",
+    "img_w": 64,
+    "img_h": 64,
+    "img_size": [64, 64],
+    "max_samples": "None",
+    "max_objects_per_image": 30,
+    "vg_use_orphaned_objects": true,
+    "include_relationships": true,
+    "vocab_json": "data/VG/vocab.json",
+    "image_dir": "data/VG",
+    "n_channels": 3,
+    "backbone": "placeholder",
+    "generator": "placeholder",
+    "padding": true,
+    "n_classes": 10
+}

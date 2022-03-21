@@ -1,0 +1,12 @@
+attrdict
+wandb
+tqdm
+einops
+torchsummary
+pyyaml
+logzero
+streamlit
+pyvis
+scikit-image
+pycocotools
+opencv-python

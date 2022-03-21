@@ -1,0 +1,72 @@
+batch_size: 64
+data:
+  backbone: placeholder
+  generator: placeholder
+  image_dir: data/VG
+  img_h: 64
+  img_size: 
+  - 64
+  - 64
+  img_w: 64
+  include_relationships: true
+  max_objects_per_image: 30
+  max_samples: None
+  n_channels: 3
+  n_classes: 10
+  name: vg
+  padding: true
+  vg_use_orphaned_objects: true
+  vocab_json: vocab.json
+data_config: vg
+data_dir: data
+debug: true
+device: cuda:0
+dropout: 0.1
+edge_emb_size: 128
+emb_size: 256
+epochs: 300
+ff_dim: 2048
+ft_ae_weights: weights/autoencoder_ft.pt
+image_size: 
+- 128
+- 128
+inference: false
+log_every_n_epochs: 1
+log_gradients: false
+log_weights: false
+loss: mse
+lr: 0.0001
+lr_scheduler: none
+max_seq_len: 6
+model_type: scenevit
+n_dec_layers: 4
+n_enc_layers: 4
+n_heads: 8
+n_imgs_per_row: 2
+n_objs: 174
+n_rels: 41
+node_emb_size: 128
+num_train_samples: null
+num_workers: 0
+one_batch: false
+opt: adam
+output_dir: output
+persistent_workers: false
+pos_enc_dim: 12
+position_embedding: sine
+resume: ''
+run_name: debug
+save_weights_every: 3
+seed: 42
+seq_bs: 16
+seq_len: 4
+start_epoch: 0
+suffix: ''
+tb_dir: logs
+teacher_forcing: false
+test_every_n_epochs: 15
+test_file: test.h5
+train_file: train.h5
+train_with_partial_imgs: false
+val_file: val.h5
+vocab_json: vocab.json

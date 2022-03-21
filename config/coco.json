@@ -1,0 +1,16 @@
+{
+    "name": "coco",
+    "img_w": 64,
+    "img_h": 64,
+    "image_size": [64, 64],
+    "train_image_dir": "images",
+    "val_image_dir": "images/val2017",
+    "train_ann_json": "annotations/train.json",
+    "val_ann_json": "annotations/val.json",
+    "vocab_json": "vocab.json",
+    "mask_size": 16,
+    "data_dir": "data/coco",
+    "n_channels": 3,
+    "normalize_images": true,
+    "padding": true
+}
